@@ -63,13 +63,13 @@ aside p {
 aside a:hover {
   background: rgb(44, 42, 42);
 }
-aside nav a:nth-child(2) {
+/* aside nav a:nth-child(2) {
   background: #000;
 }
 aside nav a:nth-child(2):hover {
   background: #b2b2b2;
   color: #222;
-}
+} */
 
 main {
   max-width: 980px;
@@ -151,4 +151,49 @@ form {
 }
 .footer-above {
   border-top: 1px solid #b2b2b2;
+}
+@media screen and (max-width: 768px) {
+  aside {
+    position: fixed;
+    background: #222;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 80px;
+    overflow: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+  }
+  #slideShow img {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    margin-left: 80px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  aside {
+    position: fixed;
+    background: #222;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 60px;
+    overflow: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+  }
+  #slideShow img {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    margin-left: 60px;
+    padding: 10px;
+  }
 }
